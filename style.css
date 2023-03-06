@@ -1,0 +1,127 @@
+:root {
+  --main-bg-color: #f9f6f0;
+  --primary-color: #40513b;
+  --secondary-color: #dcd6f7;
+  --tertiary-color: #f4eeff;
+  --hover-color: #4e6e81;
+  --p-text-color: #354550;
+  --container-width: 1140px;
+}
+
+#navbarOffcanvasLg {
+  background-color: var(--main-bg-color);
+  width: 50vw;
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--main-bg-color);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  font-size: 1.4rem !important;
+}
+
+.dropdown-menu.megamenu {
+  max-width: 1140px;
+  width: 60%;
+  margin: 0 auto 0 !important;
+  padding-top: 40px !important;
+  border: none;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: var(--main-bg-color);
+}
+
+.navbar .megamenu {
+  padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+.col-megamenu .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.list-unstyled li {
+  padding: 5px 0;
+}
+
+.list-unstyled a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.list-unstyled a:hover {
+  color: var(--hover-color);
+}
+
+.megamenu-img img {
+  max-width: 230px;
+  width: auto;
+  object-fit: cover;
+  margin-top: 18px;
+}
+
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (min-width: 990px) {
+  #w-1140 {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .navbar-brand {
+    margin-left: 2rem;
+  }
+
+  .navbar-nav {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  #w-1140 .container-fluid {
+    padding: 0 7%;
+  }
+
+  .carousel-item img {
+    height: 40vh;
+    object-fit: cover;
+  }
+}
